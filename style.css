@@ -1,31 +1,72 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    background-image: linear-gradient(178deg, rgb(216, 223, 232), rgb(210, 229, 252));
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background: linear-gradient(178deg, rgb(216, 223, 232), rgb(210, 229, 252));
+    margin: 1.7rem;
 }
 
 .container {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 45vh 45vh;
     gap: 6px 5px;
     grid-template-areas:
-        "main main main aside aside"
-        "main main main aside aside"
-        "footer footer footer aside aside"
-        "footer footer footer aside aside";
+        "main  aside "
+        "footer aside"; 
 }
 
 .aside {
     grid-area: aside;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 45%;
     gap: 0px 0px;
     grid-template-areas:
-        "a-1 a-1 a-1"
-        "a-1 a-1 a-1"
-        "a-2 a-2 a-2"
-        "a-2 a-2 a-2";
+        "a-1 "
+        "a-2 ";
     height: 100vh;
 
 }
@@ -45,7 +86,7 @@ body {
     position: relative;
     width: 15vw;
     height: 30vh;
-    top: 20vh;
+    top: 15vh;
     left: 3.5vw;
 }
 
@@ -60,19 +101,17 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-
     position: absolute;
     width: 15vw;
     height: auto;
     text-align: center;
     left: 3.5vw;
-    top: 10vh;
+   
 }
 
 
 .main {
     grid-area: main;
-    height: 48vh;
 }
 
 .logo-alura {
@@ -90,27 +129,20 @@ body {
 
 .footer {
     grid-area: footer;
-    height: 48vh;
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-
-    position: absolute;
-    width: 4vw;
-    height: 2vh;
-    left: 20vw;
-    top: 80vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
+    
 }
 
 .btn-1 {
-
+    position: relative;
+    top: 30vh;
+    left: 15vw;
     width: 15vw;
     height: 8vh;
     background: #0A3871;
@@ -125,6 +157,9 @@ body {
 
 
 .btn-2 {
+    position: relative;
+    top: 30vh;
+    left: 15vw;
     box-sizing: border-box;
     width: 15vw;
     height: 8vh;
@@ -140,7 +175,7 @@ body {
 
 .btn-3{
     position: relative;
-    top: 23.6vh;
+    top: 34.9vh;
     width: 15vw;
     height: 8vh;
     background: #FFFFFF;
@@ -164,7 +199,7 @@ button:hover{
 .text-index{
     position: absolute;
     width: 35vw;
-    height: 35vh;
+    height: 25vh;
     left: 10vw;
     top: 20vh;
     color: #0A3871;
@@ -239,4 +274,20 @@ color: #495057;
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+
+  @media screen and (max-width:760px) {
+    /* .container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 6px 5px;
+        grid-template-areas:
+            "main main"
+            "footer footer"
+            "aside aside"
+            ;
+    } */
+    
   }
