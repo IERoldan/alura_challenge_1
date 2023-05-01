@@ -196,11 +196,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 box-sizing: content-box;
-/* or 36px */
-
-
-/* Gray/gray-400 */
-
 color: #495057;
 }
 
@@ -216,7 +211,6 @@ color: #495057;
   
   .tooltip .tooltiptext{
     visibility: hidden; 
-    /* width: 140px; */
     background-color: #555;
     color: #fff;
     text-align: center;
