@@ -21,14 +21,23 @@
             <button class="btn-2" onclick="textToWork(arrayDecodes,arrayCodes)">Desencriptar</button>
         </div>
         <div class="aside box-reveal-msg" id="container-text-encrypted">
-          <div class="a-1">
-            <img src="/assets/muñeco.svg" class="muneco" alt="muñeco">
-          </div>
-          <div class="a-2">
-            <h3 class="a-2-text">Ningún mensaje fue encontrado</h3>
-                <p class="a-2-text">Ingresa el texto que desea encriptar o desencriptar</p>
-          </div>
+            <div class="a-1" id="a-1">
+                <p class="text-reveal" id="text-reveal"> hola</p>
+            </div>
+            <div class="a-2 tooltip">
+                <button class="btn-3" onclick="copyTextToClipboard()" onmouseout="updateTooltipText()">
+                <span class="tooltiptext" id="myTooltip" >
+                Copiar al portapapeles
+                </span>
+                Copiar
+                <lord-icon src="https://cdn.lordicon.com/pqxdilfs.json" trigger="hover"
+                        colors="primary:#121331,secondary:#646e78,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#ebe6ef"
+                        style="width:30px;height:30px" class='icon-copy'>
+                </lord-icon>
+                </button>
+            </div>
         </div>
       </div>
+      <script src="/index_1.js"></script>
 </body>
 </html>
