@@ -7,11 +7,8 @@ let containerTextEncrypted = document.getElementById('container-text-encrypted')
                 <img src="/assets/muñeco.svg" class="muneco" alt="muñeco">
             </div>
             <div class="a-2">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p class="a-2-parr">Ingresa el texto que desea encriptar o desencriptar</p>
-            </div>
-            <div class="a-1" id="a-1">
-                <p class="text-reveal" id="text-reveal"></p>
+                <h3 class="a-2-text">Ningún mensaje fue encontrado</h3>
+                <p class="a-2-text">Ingresa el texto que desea encriptar o desencriptar</p>
             </div>
 
 `
