@@ -1,25 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style_1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="img" href="/assets/Logo_alura.png">
     <title>Encriptador</title>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </head>
-<body class="container">
-    
-        <div class="main ">
+
+<body>
+    <div class="container">
+        <div class="main">
             <a href="/index.html"><img src="/assets/Logo_alura.png" alt="logo-alura" class="logo-alura"></a>
             <textarea name="text-index" type="text" class="text-index" id="text-input"
                 placeholder="Ingrese el texto aqui" autofocus maxlength="150"></textarea>
         </div>
-        <div class="aside box-reveal-msg" id="container-text-encrypted">
-        </div>
-        <div class="footer ">
+        <div class="footer">
             <button class="btn-1" onclick="textToWork(arrayCodes, arrayDecodes)" id="btn-1">Encriptar</button>
             <button class="btn-2" onclick="textToWork(arrayDecodes,arrayCodes)">Desencriptar</button>
         </div>
+        <div class="aside box-reveal-msg" id="container-text-encrypted">
+            
+        </div>
+    </div>
     <script src="/index.js"></script>
 </body>
+
+</html>
