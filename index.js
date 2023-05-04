@@ -1,7 +1,8 @@
 const arrayCodes = ['e', 'i', 'a', 'o', 'u'];
 const arrayDecodes = ['enter', 'imes', 'ai', 'ober', 'ufat'];
-
 const TextOfInput = document.getElementById("text-input").value;
+const textToAlert = document.getElementById('text_alert');
+let textToAnalize = document.getElementById("text-input");
 let containerTextEncrypted = document.getElementById('container-text-encrypted').innerHTML = `
             <div class="a-1">
                 <img src="/assets/muñeco.svg" class="muneco" alt="muñeco">
@@ -11,6 +12,10 @@ let containerTextEncrypted = document.getElementById('container-text-encrypted')
                     <p class="a-2-text"><i>Ingresa el texto que desea encriptar o desencriptar</i></p>
               </div>
 `
+
+function textAlertCase(){
+        textToAlert.className = 'contenedor-text-alert appear'
+}
 
 function textToWork(X, Y) {
     let containerTextEncrypted = document.getElementById('container-text-encrypted');
@@ -34,11 +39,13 @@ function textToWork(X, Y) {
             </div>    
     `
     for (let position = 0; position <= X.length; position++) {
-        const textToAnalize = document.getElementById("text-input").value;
+        let textToAnalize = document.getElementById("text-input");
+        textToAnalize = document.getElementById("text-input").value;
         document.getElementById("text-input").value = textToAnalize.replaceAll(X[position], Y[position]);
         document.getElementById("text-reveal").innerHTML = textToAnalize;
     }
-    document.getElementById("text-input").value = TextOfInput;
+    document.getElementById("text-input").value = TextOfInput
+    textToAlert.className = 'contenedor-text-alert';
 };
 
 function copyTextToClipboard() {
