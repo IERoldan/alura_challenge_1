@@ -5,7 +5,7 @@ const textToAlert = document.getElementById('text_alert');
 let textToAnalize = document.getElementById("text-input");
 let containerTextEncrypted = document.getElementById('container-text-encrypted').innerHTML = `
             <div class="a-1">
-                <img src="/assets/muñeco.svg" class="muneco" alt="muñeco">
+                <img src="assets/muñeco.svg" class="muneco" alt="muñeco">
               </div>
               <div class="a-2">
                 <h3 class="a-2-text"><strong>Ningún mensaje fue encontrado</strong></h3>
