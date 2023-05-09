@@ -54,6 +54,15 @@ function copyTextToClipboard() {
     navigator.clipboard.writeText(textToCopy);
     const tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Texto Copiado: " + textToCopy;
+    containerTextEncrypted = document.getElementById('container-text-encrypted').innerHTML = `
+            <div class="a-1">
+                <img src="assets/muñeco.svg" class="muneco" alt="muñeco">
+              </div>
+              <div class="a-2">
+                <h3 class="a-2-text"><strong>Ningún mensaje fue encontrado</strong></h3>
+                    <p class="a-2-text"><i>Ingresa el texto que desea encriptar o desencriptar</i></p>
+              </div>
+`
 }
 
 
