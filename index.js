@@ -40,7 +40,8 @@ function textToWork(X, Y) {
     `
     for (let position = 0; position <= X.length; position++) {
         let textToAnalize = document.getElementById("text-input");
-        textToAnalize = document.getElementById("text-input").value;
+        textToAnalize = (document.getElementById("text-input").value).toLowerCase();
+
         document.getElementById("text-input").value = textToAnalize.replaceAll(X[position], Y[position]);
         document.getElementById("text-reveal").innerHTML = textToAnalize;
     }
