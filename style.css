@@ -145,6 +145,13 @@ font-family: 'Inter', sans-serif;
 
 }
 
+.strong{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
 
 .contenedor-text-alert{
   position: relative;
